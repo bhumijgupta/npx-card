@@ -32,7 +32,7 @@ const options = {
     margin: 1,
     borderRadius: 1,
     align: "center",
-    borderColor: "grey",
+    borderColor: "cyan",
     borderStyle: "bold"
 }
 
@@ -70,7 +70,7 @@ Object.keys(data).forEach((key) => {
 })
 
 
-const string = chalk.white(heading) + newline + newline + newline +
+const string = chalk.whiteBright(heading) + newline + newline + newline +
     chalk.yellow(labels.work) + data.work + newline +
     chalk.yellow(labels.youtube) + data.youtube + newline + newline +
     chalk.yellow(labels.github) + data.github + newline +
