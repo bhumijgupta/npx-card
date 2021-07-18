@@ -1,17 +1,25 @@
 {
   "name": "bhumijgupta",
   "version": "0.0.2",
-  "description": "",
+  "description": "A personal NPM card for Bhumij Gupta (@bhumijgupta)",
   "main": "index.js",
   "bin": {
     "bhumijgupta": "index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhumijgupta/npx-card.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "npm-card",
+    "npm",
+    "card"
+  ],
+  "author": "Bhumij Gupta <bhumijgupta@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "boxen": "^5.0.1",
     "chalk": "^4.1.1"
