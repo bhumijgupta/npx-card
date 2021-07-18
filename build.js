@@ -1,7 +1,9 @@
-#!/usr/bin/env node
+'use strict'
 
 const boxen = require('boxen');
 const chalk = require('chalk');
+const fs = require('fs');
+const path = require('path');
 
 const labels = {
     work: "Work: ",
@@ -76,4 +78,5 @@ const string = `Bhumij Gupta ${chalk.green("/")} Programylis` + newline + newlin
 // Create a box with data and options
 const box = boxen(string, options);
 
-console.log(box)
+// write box to current directory/bin
+fs.writeFileSync(path.join(__dirname, './bin/output.txt'), box);

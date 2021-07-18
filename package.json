@@ -2,25 +2,31 @@
   "name": "bhumijgupta",
   "version": "0.0.2",
   "description": "A personal NPM card for Bhumij Gupta (@bhumijgupta)",
-  "main": "index.js",
+  "main": "bin/index.js",
   "bin": {
-    "bhumijgupta": "index.js"
+    "bhumijgupta": "bin/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bhumijgupta/npx-card.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "npm-card",
     "npm",
     "card"
   ],
+  "files": [
+    "bin/index.js",
+    "bin/output.txt"
+  ],
   "author": "Bhumij Gupta <bhumijgupta@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "boxen": "^5.0.1",
     "chalk": "^4.1.1"
   }
