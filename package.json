@@ -13,7 +13,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "dev": "node build.js && node bin/index.js"
   },
   "keywords": [
     "npm-card",

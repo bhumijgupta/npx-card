@@ -31,8 +31,12 @@ const options = {
     padding: 1,
     margin: 1,
     borderRadius: 1,
-    align: "center"
+    align: "center",
+    borderColor: "grey",
+    borderStyle: "bold"
 }
+
+const heading = `  Bhumij Gupta / Programylis  `
 
 // Get max length of key of labels
 const getMaxLength = (labels) => {
@@ -66,17 +70,17 @@ Object.keys(data).forEach((key) => {
 })
 
 
-const string = `Bhumij Gupta ${chalk.green("/")} Programylis` + newline + newline +
-    chalk.bold(labels.work) + data.work + newline +
-    chalk.bold(labels.youtube) + data.youtube + newline +
-    chalk.bold(labels.github) + data.github + newline +
-    chalk.bold(labels.twitter) + data.twitter + newline +
-    chalk.bold(labels.linkedin) + data.linkedin + newline +
-    chalk.bold(labels.web) + data.web + newline + newline +
-    chalk.bold(labels.card) + data.card
+const string = chalk.white(heading) + newline + newline + newline +
+    chalk.yellow(labels.work) + data.work + newline +
+    chalk.yellow(labels.youtube) + data.youtube + newline + newline +
+    chalk.yellow(labels.github) + data.github + newline +
+    chalk.yellow(labels.twitter) + data.twitter + newline +
+    chalk.yellow(labels.linkedin) + data.linkedin + newline +
+    chalk.yellow(labels.web) + data.web + newline + newline +
+    chalk.yellow(labels.card) + data.card
 
 // Create a box with data and options
-const box = boxen(string, options);
+const box = boxen(chalk.green(string), options);
 
 // write box to current directory/bin
 fs.writeFileSync(path.join(__dirname, './bin/output.txt'), box);
