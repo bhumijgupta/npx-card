@@ -16,7 +16,7 @@ const labels = {
 }
 
 const data = {
-    work: "Software Developer at AppDynamics",
+    work: "Software Developer at EpiFi(Fi.money). Prev at AppDynamics",
     youtube: "https://bhumij.tech/youtube",
     github: "https://github.com/bhumijgupta",
     twitter: "https://twitter.com/bhumijgupta",
